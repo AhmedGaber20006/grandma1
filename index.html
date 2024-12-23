@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Gaber and his grandmother">
+    <title>تيته الغالية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        img {
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+        }
+        .message {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .fadeInMessage {
+            display: none;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>تيّته الغالية</h1>
+        <img src="470995521_2461920707475486_3016408050049036138_n.jpg" alt="Ahmed Gaber's Photo" width="200" height="200">
+        <div class="message fadeInMessage" id="message">
+            <p>ربنا يرحمك في الجنة إن شاء الله، يا جدتي الحبيبة. عشتِ في قلبنا وأذهاننا إلى الأبد.</p>
+        </div>
+    </div>
+    
+    <script>
+        // عرض الرسالة بعد تحميل الصفحة
+        window.onload = function() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
